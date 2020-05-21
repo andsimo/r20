@@ -1,0 +1,2444 @@
+<div class="buttonbar">
+    <button type="action" name="act_person">Person</button>
+    <button type="action" name="act_strid">Strid</button>
+    <button type="action" name="act_eqips">Eqips</button>
+    <button type="action" name="act_erfarenheter">Erfarenheter</button>
+    <button type="action" name="act_highscores">Highscores</button>
+</div>
+
+<input type='hidden' class='sheet-tabstoggle' name='attr_sheetTab'  value='person'/>
+
+<div class="person">
+    <div class="page1">
+        <div class="persondata">
+            <h1>PERSONDATA</h1>
+            <div class="persondata-container">
+                <div class="persondata-col">
+                    <div class="meta-container">
+                        <span class="label meta-label" >Namn</span>
+                        <input class="input meta-input" type="text" name="attr_namn" value="" title="@{namn}" spellcheck="false"/>
+                    </div>
+                    <div class="meta-container">
+                        <span class="label meta-label">Sfär</span>
+                        <input class="input meta-input" type="text" name="attr_sphere" value="" title="@{sphere}" spellcheck="false"/>
+                    </div>
+                    <div class="meta-container">
+                        <span class="label meta-label">Nuvarande kontrakt</span>
+                        <input class="input meta-input nuvarande-kontrakt-input" type="text" name="attr_nuvarande_kontrakt" value="" title="@{nuvarande_kontrakt}" spellcheck="false"/>
+                        <input class="input meta-input villkor-input" type="text" name="attr_villkor" value="" title="@{villkor}" placeholder="Villkor" spellcheck="false"/>
+                    </div>
+                    <div class="meta-container">
+                        <span class="label meta-label">Utseende</span>
+                        <textarea class="textarea utseende-text" name="attr_utseende" value="" title="@{utseende}" spellcheck="false"></textarea>
+                    </div>
+                </div>
+                <div class="persondata-col">
+                    <div class="meta-container">
+                        <span class="label meta-label">&Aring;lder &amp; Generation</span>
+                        <input class="numinput" type="number" name="attr_age" value="" title="@{age}" min="0" />
+                        <select class="select gen-select" name="attr_generation" title="@{generation}" value="">
+                            <option value="epsilon">Generation Epsilon</option>
+                            <option value="auto">Generation Auto</option>
+                            <option value="fucked">The Fucked Generation</option>
+                            <option value="presplit">Presplit</option>
+                        </select>
+                    </div>
+                    <div class="meta-container">
+                        <span class="label meta-label">GenID</span>
+                        <input class="input meta-input" type="text" name="attr_genid" value="" title="@{genid}" spellcheck="false" />
+                    </div>
+                    <div class="meta-container">
+                        <span class="label meta-label">Pitch</span>
+                        <textarea class="textarea pitch-text" name="attr_pitch" value="" title="@{pitch}" spellcheck="false"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="attributes-jenkem">
+            <div class="attribut-w-header">
+                <h1>ATTRIBUT</h1>
+                <div class="attributcontainer">
+
+                <div class="attributes">
+                    <div class="attribut">
+                        <span class="label">Flex</span>
+                        <input class="numinput" type="number" name="attr_flex" value="" title="@{flex}" />
+                    </div>
+                    <div class="attribut">
+                        <span class="label">Avantgarde</span>
+                        <input class="numinput" type="number" name="attr_avantgarde" value="" title="@{avantgarde}" />
+                    </div>
+                    <div class="attribut">
+                        <span class="label">Cortex</span>
+                        <input class="numinput" type="number" name="attr_cortex" value="" title="@{cortex}" />
+                    </div>
+                </div>
+                <div class="attributes">
+                    <div class="attribut">
+                        <span class="label">Sync</span>
+                        <input class="numinput" type="number" name="attr_sync" value="" title="@{sync}" />
+                    </div>
+                    <div class="attribut">
+                        <span class="label">Karisma</span>
+                        <input class="numinput" type="number" name="attr_karisma" value="" title="@{karisma}" />
+                    </div>
+                    <div class="attribut">
+                        <span class="label">Tech</span>
+                        <input class="numinput" type="number" name="attr_tech" value="" title="@{tech}" />
+                    </div>
+                </div>
+                <div class="attributes">
+                    <div class="attribut">
+                        <span class="label">Primal</span>
+                        <input class="numinput" type="number" name="attr_primal" value="" title="@{primal}" />
+                    </div>
+                    <div class="attribut">
+                        <span class="label">Instinkt</span>
+                        <input class="numinput" type="number" name="attr_instinkt" value="" title="@{karisma}" />
+                    </div>
+                    <div class="attribut">
+                        <span class="label">Systemet</span>
+                        <input class="numinput" type="number" name="attr_systemet" value="" title="@{systemet}" />
+                    </div>
+                </div>
+                <div class="attributes">
+                        <div class="attribut">
+                        <span class="label">Hardcore</span>
+                        <input class="numinput" type="number" name="attr_hardcore" value="" title="@{hardcore}" />                             
+                        </div>
+                    <img class="nimrod-image" alt="Nimrod 10p model" src="https://raw.githubusercontent.com/andsimo/r20/master/nimrod10p.PNG"/>
+                </div>
+            </div>
+            </div>
+            <div class="jenkem">
+                <h1>JENKEM</h1>
+                <textarea class="textarea jenkembox" name="attr_jenkem" value="" title="@{jenkem}"></textarea>
+            </div>
+        </div>
+        <div class="edges">
+            <h1 class="edge-header">EDGES</h1>
+            <div class="edgecontainer">
+                <input class="input edge-input"  type="text" name="attr_edge1" placeholder="Edge"/>
+                <div class="levelbox">
+                    <span class="levellabel">Level</span>
+                    <select class="levelselector" name="attr_edge_lvl1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="levelbox">
+                    <span class="levellabel">Lager</span>
+                    <select class="levelselector" name="attr_lager_lvl1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <input class="input edge-desc" type="text" name="attr_edge_desc1" placeholder="Beskrivning"/>
+            </div>
+            <div class="edgecontainer">
+                <input class="input edge-input"  type="text" name="attr_edge2" placeholder="Edge" spellcheck="false"/>
+                <div class="levelbox">
+                    <span class="levellabel">Level</span>
+                    <select class="levelselector" name="attr_edge_lvl2">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="levelbox">
+                    <span class="levellabel">Lager</span>
+                    <select class="levelselector" name="attr_lager_lvl2">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <input class="input edge-desc" type="text" name="attr_edge_desc2" placeholder="Beskrivning" spellcheck="false"/>
+            </div>
+            <div class="edgecontainer">
+                <input class="input edge-input"  type="text" name="attr_edge3" placeholder="Edge" spellcheck="false"/>
+                <div class="levelbox">
+                    <span class="levellabel">Level</span>
+                    <select class="levelselector" name="attr_edge_lvl3">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="levelbox">
+                    <span class="levellabel">Lager</span>
+                    <select class="levelselector" name="attr_lager_lvl3">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <input class="input edge-desc" type="text" name="attr_edge_desc3" placeholder="Beskrivning" spellcheck="false"/>
+            </div>
+            <div class="edgecontainer">
+                <input class="input edge-input"  type="text" name="attr_edge4" placeholder="Edge" spellcheck="false"/>
+                <div class="levelbox">
+                    <span class="levellabel">Level</span>
+                    <select class="levelselector" name="attr_edge_lvl4">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="levelbox">
+                    <span class="levellabel">Lager</span>
+                    <select class="levelselector" name="attr_lager_lvl4">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <input class="input edge-desc" type="text" name="attr_edge_desc4" placeholder="Beskrivning" spellcheck="false"/>
+            </div>
+            <div class="edgecontainer">
+                <input class="input edge-input"  type="text" name="attr_edge5" placeholder="Edge" spellcheck="false"/>
+                <div class="levelbox">
+                    <span class="levellabel">Level</span>
+                    <select class="levelselector" name="attr_edge_lvl5">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="levelbox">
+                    <span class="levellabel">Lager</span>
+                    <select class="levelselector" name="attr_lager_lvl5">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <input class="input edge-desc" type="text" name="attr_edge_desc5" placeholder="Beskrivning" spellcheck="false"/>
+            </div>
+            <div class="edgecontainer">
+                <input class="input edge-input"  type="text" name="attr_edge6" placeholder="Edge" spellcheck="false"/>
+                <div class="levelbox">
+                    <span class="levellabel">Level</span>
+                    <select class="levelselector" name="attr_edge_lvl6">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="levelbox">
+                    <span class="levellabel">Lager</span>
+                    <select class="levelselector" name="attr_lager_lvl6">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <input class="input edge-desc"  type="text" name="attr_edge_desc6" placeholder="Beskrivning" spellcheck="false"/>
+            </div>
+            <div class="edgecontainer">
+                <input class="input edge-input"  type="text" name="attr_edge7" placeholder="Edge" spellcheck="false"/>
+                <div class="levelbox">
+                    <span class="levellabel">Level</span>
+                    <select class="levelselector" name="attr_edge_lvl7">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="levelbox">
+                    <span class="levellabel">Lager</span>
+                    <select class="levelselector" name="attr_lager_lvl7">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <input class="input edge-desc"  type="text" name="attr_edge_desc7" placeholder="Beskrivning" spellcheck="false"/>
+            </div>
+            <div class="edgecontainer">
+                <input class="input edge-input"  type="text" name="attr_edge8" placeholder="Edge" spellcheck="false"/>
+                <div class="levelbox">
+                    <span class="levellabel">Level</span>
+                    <select class="levelselector" name="attr_edge_lvl8">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="levelbox">
+                    <span class="levellabel">Lager</span>
+                    <select class="levelselector" name="attr_lager_lvl8">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <input class="input edge-desc"  type="text" name="attr_edge_desc8" placeholder="Beskrivning" spellcheck="false"/>
+            </div>
+            <fieldset class="repeating_edges">
+                <div class="edgecontainer">
+                    <input class="input edge-input"  type="text" name="attr_edge" placeholder="Edge" spellcheck="false"/>
+                    <div class="levelbox">
+                        <span class="levellabel">Level</span>
+                        <select class="levelselector" name="attr_edgelvl">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="levelbox">
+                        <span class="levellabel">Lager</span>
+                        <select class="levelselector" name="attr_edgelager">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <input class="input edge-desc"  type="text" name="attr_edgedesc" placeholder="Beskrivning" spellcheck="false"/>
+                </div>
+            </fieldset>
+        </div>
+        <div class="triqs">
+            <h1 class="triq-h1">TRIQS</h1>
+            <div class="triqcontainer">
+                <div class="triq-header-container">
+                    <span class="triq-header triq-header-triq">Triq</span>
+                    <span class="triq-header triq-header-kostnad">Kostnad</span>
+                    <span class="triq-header triq-header-edge">Edge</span>
+                    <span class="triq-header triq-header-desc">Beskrivning</span>
+                </div>
+                <div class="triq">
+                    <input class="input triq-input" type="text" name="attr_triq1" placeholder="Triq" spellcheck="false"/>
+                    <input class="input triq-input triq-numinput" type="number" value="" name="attr_triq_cost1" />
+                    <input class="input triq-input" type="text" value="" name="attr_triq_edge1" placeholder="Edge" spellcheck="false"/>
+                    <input class="input triq-input triq-desc-input" type="text" name="attr_triq_desc1" placeholder="Beskrivning" spellcheck="false"/>
+                </div>
+                <div class="triq">
+                    <input class="input triq-input" type="text" name="attr_triq2" placeholder="Triq" spellcheck="false"/>
+                    <input class="input triq-input triq-numinput" type="number" value="" name="attr_triq_cost2" />
+                    <input class="input triq-input" type="text" value="" name="attr_triq_edge2" placeholder="Edge"/>
+                    <input class="input triq-input triq-desc-input" type="text" name="attr_triq_desc2" placeholder="Beskrivning" spellcheck="false"/>
+                </div>
+                <div class="triq">
+                    <input class="input triq-input" type="text" name="attr_triq3" placeholder="Triq"/>
+                    <input class="input triq-input triq-numinput" type="number" value="" name="attr_triq_cost3"/>
+                    <input class="input triq-input" type="text" value="" name="attr_triq_edge3" placeholder="Edge"/>
+                    <input class="input triq-input triq-desc-input" type="text" name="attr_triq_desc3" placeholder="Beskrivning"/>
+                </div>
+                <div class="triq">
+                     <input class="input triq-input" type="text" name="attr_triq4" placeholder="Triq"/>
+                     <input class="input triq-input triq-numinput" type="number" value="" name="attr_triq_cost4"/>
+                     <input class="input triq-input" type="text" value="" name="attr_triq_edge4" placeholder="Edge"/>
+                     <input class="input triq-input triq-desc-input" type="text" name="attr_triq_desc4" placeholder="Beskrivning"/>
+                </div>
+                <div class="triq">
+                     <input class="input triq-input" type="text" name="attr_triq5" placeholder="Triq"/>
+                     <input class="input triq-input triq-numinput" type="number" value="" name="attr_triq_cost5"/>
+                     <input class="input triq-input" type="text" value="" name="attr_triq_edge5" placeholder="Edge"/>
+                     <input class="input triq-input triq-desc-input" type="text" name="attr_triq_desc5" placeholder="Beskrivning"/>
+                </div>
+                <div class="triq">
+                     <input class="input triq-input" type="text" name="attr_triq6" placeholder="Triq"/>
+                     <input class="input triq-input triq-numinput" type="number" value="" name="attr_triq_cost6"/>
+                     <input class="input triq-input" type="text" value="" name="attr_triq_edge6" placeholder="Edge"/>
+                     <input class="input triq-input triq-desc-input" type="text" name="attr_triq_desc6" placeholder="Beskrivning"/>
+                </div>
+                <fieldset class="repeating_triq">
+                    <div class="triq">
+                         <input class="input triq-input" type="text" name="attr_triq" placeholder="Triq"/>
+                         <input class="input triq-input triq-numinput" type="number" value="" name="attr_triqcost"/>
+                         <input class="input triq-input" type="text" value="" name="attr_triqedge" placeholder="Edge"/>
+                         <input class="input triq-input triq-desc-input" type="text" name="attr_triqdesc" placeholder="Beskrivning"/>
+                    </div>
+
+                </fieldset>
+            </div>
+        </div>
+        <div class="mental-anatomi">
+        <h1>MENTAL ANATOMI</h1>
+        <div class="tripp-flow">
+            <div class="tripp">
+                <span class="label tripplabel">Tripp</span>
+                <input class="input trip-input numinput" type="number" name="attr_trip" value=""/>
+            </div>
+            <div class="flowcontainer">
+                <span class="label flowlabel">Flow</span>
+                <div class="flow-boxes">
+                    <select class="flow" name="attr_flow1">
+                        <option value="oanvand"></option>
+                        <option value="anvand">3</option>
+                        <option value="stress">*</option>
+                        <option value="avtrubbad">d</option>
+                    </select>
+                    <select class="flow" name="attr_flow2">
+                        <option value="oanvand"></option>
+                        <option value="anvand">3</option>
+                        <option value="stress">*</option>
+                        <option value="avtrubbad">d</option>
+                    </select>
+                    <select class="flow" name="attr_flow3">
+                        <option value="oanvand"></option>
+                        <option value="anvand">3</option>
+                        <option value="stress">*</option>
+                        <option value="avtrubbad">d</option>
+                    </select>
+                    <select class="flow" name="attr_flow4">
+                        <option value="oanvand"></option>
+                        <option value="anvand">3</option>
+                        <option value="stress">*</option>
+                        <option value="avtrubbad">d</option>
+                    </select>
+                    <select class="flow" name="attr_flow5">
+                        <option value="oanvand"></option>
+                        <option value="anvand">3</option>
+                        <option value="stress">*</option>
+                        <option value="avtrubbad">d</option>
+                    </select>
+                    <select class="flow" name="attr_flow6">
+                        <option value="oanvand"></option>
+                        <option value="anvand">3</option>
+                        <option value="stress">*</option>
+                        <option value="avtrubbad">d</option>
+                    </select>
+                    <select class="flow" name="attr_flow7">
+                        <option value="oanvand"></option>
+                        <option value="anvand">3</option>
+                        <option value="stress">*</option>
+                        <option value="avtrubbad">d</option>
+                    </select>
+                    <select class="flow" name="attr_flow8">
+                        <option value="oanvand"></option>
+                        <option value="anvand">3</option>
+                        <option value="stress">*</option>
+                        <option value="avtrubbad">d</option>
+                    </select>
+                    <select class="flow" name="attr_flow9">
+                        <option value="oanvand"></option>
+                        <option value="anvand">3</option>
+                        <option value="stress">*</option>
+                        <option value="avtrubbad">d</option>
+                    </select>
+                    <select class="flow" name="attr_flow10">
+                        <option value="oanvand"></option>
+                        <option value="anvand">3</option>
+                        <option value="stress">*</option>
+                        <option value="avtrubbad">d</option>
+                    </select>
+                    <select class="flow" name="attr_flow11">
+                        <option value="oanvand"></option>
+                        <option value="anvand">3</option>
+                        <option value="stress">*</option>
+                        <option value="avtrubbad">d</option>
+                    </select>
+                    <select class="flow" name="attr_flow12">
+                        <option value="oanvand"></option>
+                        <option value="anvand">3</option>
+                        <option value="stress">*</option>
+                        <option value="avtrubbad">d</option>
+                    </select>
+                </div>
+                <div class="flow-explanation">
+                    <div class="exp">
+                        <span class="explanation"><span style="font-family: 'Pictos'">3</span> Använd </span>
+                    </div>
+                    <div class="exp">
+                        <span class="explanation"><span style="font-family: 'Pictos'">*</span> Stress </span>    
+                    </div>
+                    <div class="exp">
+                        <span class="explanation"><span style="font-family: 'Pictos'">d</span> #Avtrubbning</span>
+                    </div>
+                </div> 
+                
+            </div>
+        </div>
+        <div class="sug-container">
+            <div class="sug">
+                <span class="label">Sug</span>
+                <input class="input suginput" type="text" name="attr_sug1"/>
+                <select class="sug-status" name="attr_sug_status1">
+                    <option value="ny">Ny (+4 Flow)</option>
+                    <option value="anvand">Använd (+2 Flow)</option>
+                    <option value="sliten">Sliten (+1 Flow)</option>
+                    <option value="utbrand">Utbränd (+1 Stress)</option>
+                </select>
+            </div>
+            <div class="sug">
+                <span class="label">Sug</span>
+                <input class="input suginput" type="text" name="attr_sug2"/>
+                <select class="sug-status" name="attr_sug_status2">
+                    <option value="ny">Ny (+4 Flow)</option>
+                    <option value="anvand">Använd (+2 Flow)</option>
+                    <option value="sliten">Sliten (+1 Flow)</option>
+                    <option value="utbrand">Utbränd (+1 Stress)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="strid">
+    <div class="vapen-section">
+        <h1>VAPEN</h1>
+        <div class="vapen-container">
+            <div class="vapen-header-container">
+                <span class="vapen-header vapen-header-eqip">Vapen</span>
+                <span class="vapen-header vapen-header-auto">Auto</span>
+                <span class="vapen-header vapen-header-anfall">Anfall</span>
+                <span class="vapen-header vapen-header-skadeverkan">Skada</span>
+                <span class="vapen-header vapen-header-ammo">Ammo</span>
+                <span class="vapen-header vapen-header-kvalitet">Kvalitet</span>
+                <span class="vapen-header vapen-header-sign">#Sign</span>
+                <span class="vapen-header vapen-header-egenskaper">Egenskaper</span>
+                <img class="vapen-header killateral-image" alt="Problem? Killed" src="https://raw.githubusercontent.com/andsimo/r20/master/Killateral.PNG"/>
+            </div>
+            <div class="vapen">
+                <input class="vapen-input vapen-eqip vapen-locked" type="text" name="attr_vapen0" value="Obeväpnad strid" spellcheck="false" readonly/>
+                <input class="vapen-input vapen-auto" type="number" name="attr_vapen-auto0" min="0" max="4" value="0" />
+                <input class="vapen-input vapen-anfall" type="text" name="attr_anfall0" placeholder="anfall" spellcheck="false" />
+                <input class="vapen-input vapen-skadeverkan" type="text" name="attr_skadeverkan0" placeholder="T10" spellcheck="false" />
+                <input class="vapen-input vapen-max-ammo vapen-locked" type="text" name="attr_vapen-max-ammo0" value="-" spellcheck="false" readonly/>
+                <input class="vapen-input vapen-kvalitet vapen-locked" type="text" name="attr_vapen-kval0" value="-" spellcheck="false" readonly/>
+                <input class="vapen-input vapen-sign" type="text" name="attr_vapen-sign0" placeholder="#Sign" spellcheck="false" />
+                <input class="vapen-input vapen-egenskaper" type="text" name="attr_vapen-egenskaper0" placeholder="egenskaper" spellcheck="false"/>
+                <input class="vapen-input vapen-kills vapen-locked" type="text" name="attr_vapen-mag0" maxlength="1" value="-" readonly/>
+            </div>
+            <div class="vapen">
+                <input class="vapen-input vapen-eqip" type="text" name="attr_vapen1" placeholder="vapen" spellcheck="false"/>
+                <input class="vapen-input vapen-auto" type="number" name="attr_vapen-auto1" min="0" max="4" value="0" />
+                <input class="vapen-input vapen-anfall" type="text" name="attr_anfall1" placeholder="anfall" spellcheck="false" />
+                <input class="vapen-input vapen-skadeverkan" type="text" name="attr_skadeverkan1" placeholder="T10" spellcheck="false" />
+                <input class="vapen-input vapen-max-ammo" type="text" name="attr_vapen-max-ammo1" placeholder="ammo" spellcheck="false"/>
+                <input class="vapen-input vapen-kvalitet" type="text" name="attr_vapen-kval1" placeholder="kvalitet" spellcheck="false" />
+                <input class="vapen-input vapen-sign" type="text" name="attr_vapen-sign1" placeholder="#Sign" spellcheck="false" />
+                <input class="vapen-input vapen-egenskaper" type="text" name="attr_vapen-egenskaper1" placeholder="egenskaper" spellcheck="false"/>
+                <input class="vapen-input vapen-kills" type="text" name="attr_vapen-mag1" maxlength="1" placeholder="Mag"/>
+            </div>
+            <div class="vapen">
+                <input class="vapen-input vapen-eqip" type="text" name="attr_vapen2" placeholder="vapen" spellcheck="false"/>
+                <input class="vapen-input vapen-auto" type="number" name="attr_vapen-auto2" min="0" max="4" value="0" />
+                <input class="vapen-input vapen-anfall" type="text" name="attr_anfall2" placeholder="anfall" spellcheck="false" />
+                <input class="vapen-input vapen-skadeverkan" type="text" name="attr_skadeverkan2" placeholder="T10" spellcheck="false" />
+                <input class="vapen-input vapen-max-ammo" type="text" name="attr_vapen-max-ammo2" placeholder="ammo" spellcheck="false"/>
+                <input class="vapen-input vapen-kvalitet" type="text" name="attr_vapen-kval2" placeholder="kvalitet" spellcheck="false" />
+                <input class="vapen-input vapen-sign" type="text" name="attr_vapen-sign2" placeholder="#Sign" spellcheck="false" />
+                <input class="vapen-input vapen-egenskaper" type="text" name="attr_vapen-egenskaper2" placeholder="egenskaper" spellcheck="false"/>
+                <input class="vapen-input vapen-kills" type="text" name="attr_vapen-mag2" maxlength="1" placeholder="Mag"/>
+            </div>
+            <div class="vapen">
+                <input class="vapen-input vapen-eqip" type="text" name="attr_vapen3" placeholder="vapen" spellcheck="false"/>
+                <input class="vapen-input vapen-auto" type="number" name="attr_vapen-auto3" min="0" max="4" value="0" />
+                <input class="vapen-input vapen-anfall" type="text" name="attr_anfall3" placeholder="anfall" spellcheck="false" />
+                <input class="vapen-input vapen-skadeverkan" type="text" name="attr_skadeverkan3" placeholder="T10" spellcheck="false" />
+                <input class="vapen-input vapen-max-ammo" type="text" name="attr_vapen-max-ammo3" placeholder="ammo" spellcheck="false"/>
+                <input class="vapen-input vapen-kvalitet" type="text" name="attr_vapen-kval3" placeholder="kvalitet" spellcheck="false" />
+                <input class="vapen-input vapen-sign" type="text" name="attr_vapen-sign3" placeholder="#Sign" spellcheck="false" />
+                <input class="vapen-input vapen-egenskaper" type="text" name="attr_vapen-egenskaper3" placeholder="egenskaper" spellcheck="false"/>
+                <input class="vapen-input vapen-kills" type="text" name="attr_vapen-mag3" maxlength="1" placeholder="Mag"/>
+            </div>
+            <div class="vapen">
+                <input class="vapen-input vapen-eqip" type="text" name="attr_vapen4" placeholder="vapen" spellcheck="false"/>
+                <input class="vapen-input vapen-auto" type="number" name="attr_vapen-auto4" min="0" max="4" value="0" />
+                <input class="vapen-input vapen-anfall" type="text" name="attr_anfall4" placeholder="anfall" spellcheck="false" />
+                <input class="vapen-input vapen-skadeverkan" type="text" name="attr_skadeverkan4" placeholder="T10" spellcheck="false" />
+                <input class="vapen-input vapen-max-ammo" type="text" name="attr_vapen-max-ammo4" placeholder="ammo" spellcheck="false"/>
+                <input class="vapen-input vapen-kvalitet" type="text" name="attr_vapen-kval4" placeholder="kvalitet" spellcheck="false" />
+                <input class="vapen-input vapen-sign" type="text" name="attr_vapen-sign4" placeholder="#Sign" spellcheck="false" />
+                <input class="vapen-input vapen-egenskaper" type="text" name="attr_vapen-egenskaper4" placeholder="egenskaper" spellcheck="false"/>
+                <input class="vapen-input vapen-kills" type="text" name="attr_vapen-mag4" maxlength="1" placeholder="Mag"/>
+            </div>
+            <fieldset class="repeating_vapen">
+                <div class="vapen">
+                    <input class="vapen-input vapen-eqip" type="text" name="attr_vapen" placeholder="vapen" spellcheck="false"/>
+                    <input class="vapen-input vapen-auto" type="number" name="attr_vapenauto" min="0" max="4" value="0" />
+                    <input class="vapen-input vapen-anfall" type="text" name="attr_anfall" placeholder="anfall" spellcheck="false" />
+                    <input class="vapen-input vapen-skadeverkan" type="text" name="attr_skadeverkan" placeholder="T10" spellcheck="false" />
+                    <input class="vapen-input vapen-max-ammo" type="text" name="attr_vapenmaxammo" placeholder="ammo" spellcheck="false"/>
+                    <input class="vapen-input vapen-kvalitet" type="text" name="attr_vapenkval" placeholder="kvalitet" spellcheck="false" />
+                    <input class="vapen-input vapen-sign" type="text" name="attr_vapensign" placeholder="#Sign" spellcheck="false" />
+                    <input class="vapen-input vapen-egenskaper" type="text" name="attr_vapenegenskaper" placeholder="egenskaper" spellcheck="false"/>
+                    <input class="vapen-input vapen-kills" type="text" name="attr_vapenmag" maxlength="1" placeholder="Mag"/>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <div class="ammo-section">
+        <h1>AMMO</h1>
+        <div class="ammo-container">
+            <div class="ammo">
+                <div class="mag-details-container">
+                    <div class="mag-details">
+                        <span class="label mag-label">A</span>
+                        <div class="current-mag-wrapper">
+                            <input class="current-mag" type="number" min="1" max="3" value=""/>
+                        </div>
+                    </div>
+                    <input class="input ammo-input" type="ammo-weapon" name="attr_ammo-wep1" placeholder="Vapen"/>
+                </div>
+                <div class="magazine-container">
+                    <div class="magazine">
+                        <span class="label ammo-label">1</span>
+                        <div class="bullet-container">
+                            <input class="bullet" type="checkbox" name="attr_b-a1-1"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-2"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-3"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-4"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-5"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-6"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-7"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-8"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-9"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-10"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-11"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-12"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-13"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-14"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-15"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-16"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-17"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-18"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-19"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a1-20"/>
+                        </div>
+                    </div>
+                    <div class="magazine">
+                        <span class="label ammo-label">2</span>
+                        <div class="bullet-container">
+                            <input class="bullet" type="checkbox" name="attr_b-a2-1"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-2"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-3"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-4"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-5"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-6"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-7"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-8"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-9"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-10"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-11"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-12"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-13"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-14"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-15"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-16"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-17"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-18"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-19"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a2-20"/>
+                        </div>
+                    </div>
+                    <div class="magazine">
+                        <span class="label ammo-label">3</span>
+                        <div class="bullet-container">
+                            <input class="bullet" type="checkbox" name="attr_b-a3-1"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-2"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-3"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-4"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-5"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-6"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-7"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-8"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-9"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-10"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-11"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-12"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-13"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-14"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-15"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-16"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-17"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-18"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-19"/>
+                            <input class="bullet" type="checkbox" name="attr_b-a3-20"/>
+                            
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="ammo">
+                <div class="mag-details-container">
+                    <div class="mag-details">
+                        <span class="label mag-label">B</span>
+                        <input class="current-mag" type="number" min="1" max="3" value=""/>
+                    </div>
+                    <input class="input ammo-input" type="ammo-weapon" name="attr_ammo-wep1" placeholder="Vapen"/>
+                </div>
+                <div class="magazine-container">
+                    <div class="magazine">
+                        <span class="label ammo-label">1</span>
+                        <div class="bullet-container">
+                            <input class="bullet" type="checkbox" name="attr_b-b1-1"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-2"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-3"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-4"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-5"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-6"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-7"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-8"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-9"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-10"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-11"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-12"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-13"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-14"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-15"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-16"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-17"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-18"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-19"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b1-20"/>
+                        </div>
+                    </div>
+                    <div class="magazine">
+                        <span class="label ammo-label">2</span>
+                        <div class="bullet-container">
+                            <input class="bullet" type="checkbox" name="attr_b-b2-1"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-2"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-3"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-4"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-5"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-6"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-7"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-8"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-9"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-10"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-11"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-12"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-13"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-14"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-15"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-16"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-17"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-18"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-19"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b2-20"/>
+                        </div>
+                    </div>
+                    <div class="magazine">
+                        <span class="label ammo-label">3</span>
+                        <div class="bullet-container">
+                            <input class="bullet" type="checkbox" name="attr_b-b3-1"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-2"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-3"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-4"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-5"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-6"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-7"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-8"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-9"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-10"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-11"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-12"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-13"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-14"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-15"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-16"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-17"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-18"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-19"/>
+                            <input class="bullet" type="checkbox" name="attr_b-b3-20"/>
+                            
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="ammo-container">
+            <div class="ammo">
+                <div class="mag-details-container">
+                    <div class="mag-details">
+                        <span class="label mag-label">C</span>
+                        <div class="current-mag-wrapper">
+                            <input class="current-mag" type="number" min="1" max="3" value=""/>
+                        </div>
+                    </div>
+                    <input class="input ammo-input" type="ammo-weapon" name="attr_ammo-wep1" placeholder="Vapen"/>
+                </div>
+                <div class="magazine-container">
+                    <div class="magazine">
+                        <span class="label ammo-label">1</span>
+                        <div class="bullet-container">
+                            <input class="bullet" type="checkbox" name="attr_b-c1-1"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-2"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-3"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-4"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-5"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-6"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-7"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-8"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-9"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-10"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-11"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-12"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-13"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-14"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-15"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-16"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-17"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-18"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-19"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c1-20"/>
+                        </div>
+                    </div>
+                    <div class="magazine">
+                        <span class="label ammo-label">2</span>
+                        <div class="bullet-container">
+                            <input class="bullet" type="checkbox" name="attr_b-c2-1"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-2"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-3"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-4"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-5"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-6"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-7"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-8"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-9"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-10"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-11"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-12"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-13"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-14"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-15"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-16"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-17"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-18"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-19"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c2-20"/>
+                        </div>
+                    </div>
+                    <div class="magazine">
+                        <span class="label ammo-label">3</span>
+                        <div class="bullet-container">
+                            <input class="bullet" type="checkbox" name="attr_b-c3-1"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-2"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-3"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-4"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-5"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-6"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-7"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-8"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-9"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-10"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-11"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-12"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-13"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-14"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-15"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-16"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-17"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-18"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-19"/>
+                            <input class="bullet" type="checkbox" name="attr_b-c3-20"/>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="ammo">
+                <div class="mag-details-container">
+                    <div class="mag-details">
+                        <span class="label mag-label">D</span>
+                        <input class="current-mag" type="number" min="1" max="3" value=""/>
+                    </div>
+                    <input class="input ammo-input" type="ammo-weapon" name="attr_ammo-wep1" placeholder="Vapen"/>
+                </div>
+                <div class="magazine-container">
+                    <div class="magazine">
+                        <span class="label ammo-label">1</span>
+                        <div class="bullet-container">
+                            <input class="bullet" type="checkbox" name="attr_b-d1-1"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-2"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-3"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-4"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-5"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-6"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-7"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-8"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-9"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-10"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-11"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-12"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-13"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-14"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-15"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-16"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-17"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-18"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-19"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d1-20"/>
+                        </div>
+                    </div>
+                    <div class="magazine">
+                        <span class="label ammo-label">2</span>
+                        <div class="bullet-container">
+                            <input class="bullet" type="checkbox" name="attr_b-d2-1"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-2"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-3"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-4"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-5"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-6"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-7"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-8"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-9"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-10"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-11"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-12"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-13"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-14"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-15"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-16"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-17"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-18"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-19"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d2-20"/>
+                        </div>
+                    </div>
+                    <div class="magazine">
+                        <span class="label ammo-label">3</span>
+                        <div class="bullet-container">
+                            <input class="bullet" type="checkbox" name="attr_b-d3-1"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-2"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-3"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-4"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-5"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-6"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-7"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-8"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-9"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-10"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-11"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-12"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-13"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-14"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-15"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-16"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-17"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-18"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-19"/>
+                            <input class="bullet" type="checkbox" name="attr_b-d3-20"/>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div> 
+    </div>
+    <div class="stridsmonitor-section">
+        <h1>STRIDSMONITOR</h1>
+        <div class="stridsmonitor-chock-container">
+            <div class="stridsmonitor-container">
+                
+                
+                <div class="stridsmonitor-stat distansforsvar">
+                    <span class="stridsmonitorlabel">#Avståndsförsvar</span>
+                    <div class="levelbox stridsmonitor-levelbox">
+                        <span class="stidsmonitor-miniheader">Stat</span>
+                        <input class="distansforsvar-input miniheader1" type="number" name="attr_distansforsvar-stat"/>
+                    </div>
+                    <div class="levelbox stridsmonitor-levelbox">
+                        <span class="stidsmonitor-miniheader">Auto</span>
+                        <input class="distansforsvar-input miniheader2" type="number" name="attr_distansforsvar-auto" min="0" max="4"/>
+                    </div>
+                </div>
+                
+                <div class="stridsmonitor-stat narstridsforsvar">
+                    <span class="stridsmonitorlabel">#Närstridsförsvar</span>
+                    <div class="levelbox stridsmonitor-levelbox">
+                        <span class="stidsmonitor-miniheader">Stat</span>
+                        <input class="distansforsvar-input miniheader1" type="number" name="attr_narstridsforsvar-stat"/>
+                    </div>
+                    <div class="levelbox stridsmonitor-levelbox">
+                        <span class="stidsmonitor-miniheader">Auto</span>
+                        <input class="distansforsvar-input miniheader2" type="number" name="attr_narstridsforsvar-auto" min="0" max="4"/>
+                    </div>
+                </div>
+                
+                
+                <div class="stridsmonitor-stat initativ">
+                    <span class="stridsmonitorlabel">#Initiativ</span>
+                    <div class="levelbox stridsmonitor-levelbox">
+                        <span class="stidsmonitor-miniheader">Stat</span>
+                        <input class="distansforsvar-input miniheader1" type="number" name="attr_initiativ-stat"/>
+                    </div>
+                    <div class="levelbox stridsmonitor-levelbox">
+                        <span class="stidsmonitor-miniheader">Auto</span>
+                        <input class="distansforsvar-input miniheader2" type="number" name="attr_initiativ-auto" min="0" max="4"/>
+                    </div>
+                </div>
+                
+                <div class="stridsmonitor-stat adrenalin">
+                    <span class="stridsmonitorlabel">#Adrenalin</span>
+                    <div class="levelbox stridsmonitor-levelbox">
+                        <span class="stidsmonitor-miniheader">Stat</span>
+                        <input class="distansforsvar-input miniheader1" type="number" name="attr_adrenalin-stat"/>
+                    </div>
+                    <div class="levelbox stridsmonitor-levelbox">
+                        <span class="stidsmonitor-miniheader">Auto</span>
+                        <input class="distansforsvar-input miniheader2" type="number" name="attr_adrenalin-auto" min="0" max="4"/>
+                    </div>
+                </div>
+                
+                <div class="stridsmonitor-stat worsening">
+                    <span class="stridsmonitorlabel">Förvärring</span>
+                    <div class="worsening-container">
+                        <span class="worsening-header">Kryssa 12h vid första skadan</span>
+                        <div class="worsening-checkbox-container">
+                            <span class="worsening-label">12h</span>
+                            <input class="worsening-checkbox" type="checkbox" name="attr_12h_cb">
+                            <span class="worsening-label">1h</span>
+                            <input class="worsening-checkbox" type="checkbox" name="attr_1h_cb">
+                            <span class="worsening-label">10min</span>
+                            <input class="worsening-checkbox" type="checkbox" name="attr_10min_cb">
+                            <span class="worsening-label">1r</span>
+                            <input class="worsening-checkbox" type="checkbox" name="attr_1r_cb">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stridsmonitor-stat insurance">
+                    <span class="stridsmonitorlabel">Sjukförsäkring</span>
+                    <input class="insurancelabel" type="text" name="attr_insurance-input"/>
+                </div>
+                
+                <div class="stridsmonitor-stat handikapp">
+                    <span class="stridsmonitorlabel">Handikapp</span>
+                    <div class="handikapp-modifier-container">
+                        <span class="handikapplabel">-4x </span>
+                        <div class="handikapp-checkbox-container">
+                            <span class="handikapp-header">H</span>
+                            <input class="handikapp-checkbox" type="checkbox" name="attr_handi_cb_h"/>
+                        </div>
+                        <div class="handikapp-checkbox-container">
+                            <span class="handikapp-header">T</span>
+                            <input class="handikapp-checkbox" type="checkbox" name="attr_handi_cb_t"/>
+                        </div>
+                        <div class="handikapp-checkbox-container">
+                            <span class="handikapp-header">AV</span>
+                            <input class="handikapp-checkbox" type="checkbox" name="attr_handi_cb_av"/>
+                        </div>
+                        <div class="handikapp-checkbox-container">
+                            <span class="handikapp-header">AH</span>
+                            <input class="handikapp-checkbox" type="checkbox" name="attr_handi_cb_ah"/>
+                        </div>
+                        <div class="handikapp-checkbox-container">
+                            <span class="handikapp-header">BV</span>
+                            <input class="handikapp-checkbox" type="checkbox" name="attr_handi_cb_bv"/>
+                        </div>
+                        <div class="handikapp-checkbox-container">
+                            <span class="handikapp-header">BH</span>
+                            <input class="handikapp-checkbox" type="checkbox" name="attr_handi_cb_bh"/>
+                        </div>
+                    </div>
+                    <input class="handikapp-desc" type="text" name="attr_handikapp_desc" placeholder="Beskrivning"/>
+                </div>
+                
+                
+                
+            </div>
+            <div class="chock-neuro-container">
+                <div class="chock-neuro chock">
+                    <h2>CHOCK</h2>
+                    <div class="chockbox">
+                        <span class="label chocklabel">Lätt</span>
+                        <input class="chock-checkbox" type="checkbox" name="attr_chock-checkbox-easy"/>
+                    </div>
+                    <div class="chockbox">
+                        <span class="label chocklabel">Svår</span>
+                        <input class="chock-checkbox" type="checkbox" name="attr_chock-checkbox-hard"/>
+                    </div>
+                    <div class="chockbox">
+                        <span class="label chocklabel">Kritisk</span>
+                        <input class="chock-checkbox" type="checkbox" name="attr_chock-checkbox-critical"/>
+                    </div>
+                    <div class="chockbox">
+                        <span class="label chocklabel">Död</span>
+                        <input class="chock-checkbox" type="checkbox" name="attr_chock-checkbox-dead"/>
+                    </div>
+                </div>
+                <div class="chock-neuro neuro">
+                    <h2>NEURO</h2>
+                    <div class="chockbox">
+                        <span class="label chocklabel">Smärta</span>
+                        <input class="chock-checkbox" type="checkbox" name="attr_neuro-checkbox-smarta"/>
+                    </div>
+                    <div class="chockbox">
+                        <span class="label chocklabel">Uppfuckad</span>
+                        <input class="chock-checkbox" type="checkbox" name="attr_neuro-checkbox-fucked"/>
+                    </div>
+                    <div class="chockbox">
+                        <span class="label chocklabel">Utslagen</span>
+                        <input class="chock-checkbox" type="checkbox" name="attr_neuro-checkbox-utslagen"/>
+                    </div>
+                    <div class="chockbox">
+                        <span class="label chocklabel">Meltad</span>
+                        <input class="chock-checkbox" type="checkbox" name="attr_neuro-checkbox-meltad"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trauma-section">
+        <h1>TRAUMA</h1>
+        <div class="trauma-container">	
+		  <div class="trauma">
+			<div class="column first">
+				
+                
+                <div class="column-cell column-heading">
+					<div class="cell maincolor">Huvud</div>
+				    <div class="skydd">
+                        <span class="skydd-label">#skydd</span>
+                        <input class="skydd-input" name="attr_skydd-huvud" type="number"/>
+				    </div>
+				</div>
+                
+                
+				<div class="column-cell">
+					<div class="cell maincolor">1-3</div>
+					<div class="cell center maincolor">Ansiktsskada</div>
+					<div class="cell">
+                        <select class="trauma-state" name="attr_ansiktsskada" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+						<!--<input type="checkbox" class="altered-trauma-checkbox" onclick="ts(this)">-->
+					</div>
+					<div class="cell">#12h</div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">16</div>
+					<div class="cell center maincolor">Krossad näsa/öra</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_krossad_nasa" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell">#1h #InteBonga</div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">20</div>
+					<div class="cell center maincolor">Ymnig blödning</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_ymnig_blodning" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell">#10min<span class="added">+2</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">23</div>
+					<div class="cell center maincolor">Skallfraktur</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_skallfraktur" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1h <br>#Uppfuckad</span><span class="added">+2</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">27</div>
+					<div class="cell center maincolor">Käktrauma</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_kaktrauma">
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1h <br>#Smärta <br>#InteBonga #OMG</span></div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">29</div>
+					<div class="cell center maincolor">Förstört öga</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_forstort-oga-v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_forstort-oga-h" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1h <br>#Uppfuckad <br>#InteBonga</span><span class="added">+2</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">35</div>
+					<div class="cell center maincolor">Luftstrupen</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_luftstrupen" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#10min <br>#Uppfuckad <br>#OMG</span><span class="added">+4</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">38</div>
+					<div class="cell center maincolor">Hjärnblödning</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_hjarnblodning" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1h <br>#Uppfuckad <br>#Dödlig</span><span class="added">+4</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">42</div>
+					<div class="cell center maincolor">Halsblödning</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_halsblodning" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1r <br>#Uppfuckad <br>#OMG</span><span class="added">+4</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">48</div>
+					<div class="cell center maincolor">Bruten nacke</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_bruten_nacke" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1h <br>#Utslagen #Dödlig <br>#Handikappad</span><span class="added">+4</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">52</div>
+					<div class="cell center maincolor">Hjärntrauma</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_hjarntrauma" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#10min <br>#Meltad <br>#Dödlig</span><span class="added">+8</span></div>
+				</div>
+				
+				<div class="column-cell column-heading mg-top">
+					<div class="cell maincolor">Armar</div>
+				    <div class="skydd">
+                        <span class="skydd-label">#skydd</span>
+                        <input class="skydd-input" name="attr_skydd-armar-v" type="number" placeholder="V" />
+                        <input class="skydd-input" name="attr_skydd-armar-h" type="number" placeholder="H"/>
+				    </div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">6-7</div>
+					<div class="cell center maincolor">Sårskada</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_sarskada_v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_sarskada_h" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell">#12h</div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">10-11</div>
+					<div class="cell center maincolor">Hud-/ muskelskada</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_hud_muskelskada_v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_hud_muskelskada_h" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell">#12h</div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">18-19</div>
+					<div class="cell center maincolor">Nervskada</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_hud_nervskada_v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_hud_nervskada_h" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#12h <br>#Smärta <br>#Handikappad</span></div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">25-26</div>
+					<div class="cell center maincolor">Fraktur</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_fraktur_v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_fraktur_h" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1h <br>#Smärta <br>#Handikappad</span></div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">33-34</div>
+					<div class="cell center maincolor">Kraftig blödning</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_kraftig_blodning_v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_kraftig_blodning_h" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell">#1r<span class="added">+2</span></div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">43-44</div>
+					<div class="cell center maincolor">Lemlästad</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_lemlastad_v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_lemlastad_h" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1r <br>#Fubar <br>#OMG</span><span class="added">+4</span></div>
+				</div>
+			</div>
+			
+			<div class="column second">
+				<div class="skada">
+					<div class="box">
+						<label for="oskadad"><span style="font-family:'Pictos'">k</span>: Oskadad</label>
+					</div>
+					<div class="box">
+						<label for="skadad"><span style="font-family:'Pictos'">Y</span>: Skadad</label>
+					</div>
+					<div class="box">
+						<label for="felläkt"><span style="font-family:'Pictos'">J</span>: Felläkt</label>
+					</div>
+				</div>
+				<div class="column-cell split-3">
+					<div class="cell maincolor">53+</div>
+					<div class="cell center maincolor">Ultra</div>
+					<div class="cell"><span>#Pen +1 och <br>+1 extraskada, <br>-10 trauma</span></div>
+				</div>
+			</div>
+			
+			<div class="column third">
+				<div class="column-cell column-heading">
+					<div class="cell maincolor">Torso</div>
+				    <div class="skydd">
+                        <span class="skydd-label">#skydd</span>
+                        <input class="skydd-input" name="attr_skydd-torso" type="number"/>
+				    </div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">4-5</div>
+					<div class="cell center maincolor">Sårskada</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_sarskada" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell">#12h</div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">14-15</div>
+					<div class="cell center maincolor">Kön</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_kon" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#12h <br>#Smärta</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">17</div>
+					<div class="cell center maincolor">Brutet revben</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_brutet_revben" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#12h <br>#Smärta</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">24</div>
+					<div class="cell center maincolor">Buksmärta</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_buksmarta" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1h <br>#Smärta</span><span class="added">+2</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">28</div>
+					<div class="cell center maincolor">Lungträff</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_lungtraff" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1h <br>#Uppfuckad</span><span class="added">+4</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">32</div>
+					<div class="cell center maincolor">Underliv</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_underliv" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#10min <br>#Smärta <br>#OMG</span><span class="added">+2</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">36-37</div>
+					<div class="cell center maincolor">Punkterad lunga</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_punkterad_lunga" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#10min <br>#Uppfuckad</span><span class="added">+4</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">41</div>
+					<div class="cell center maincolor">Ryggrad</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_ryggrad" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1h <br>#Uppfuckad <br>#Handikappad</span><span class="added">+4</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">47</div>
+					<div class="cell center maincolor">Kraftig blödning</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_kraftig_blodning" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1r <br>#Uppfuckad <br>#Dödlig</span><span class="added">+4</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">49-50</div>
+					<div class="cell center maincolor">Multipel organskada</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_multipel_organskada" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#10min <br>#Smärta <br>#OMG</span><span class="added">+6</span></div>
+				</div>
+				<div class="column-cell">
+					<div class="cell maincolor">51</div>
+					<div class="cell center maincolor">Hjärta</div>
+					<div class="cell">
+						<select class="trauma-state" name="attr_hjarta" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1r <br>#Utslagen <br>#Dödlig</span><span class="added">+8</span></div>
+				</div>
+				
+				<div class="column-cell column-heading mg-top">
+					<div class="cell maincolor">Ben</div>
+				    <div class="skydd">
+                        <span class="skydd-label">#skydd</span>
+                        <input class="skydd-input" name="attr_skydd-ben-v" type="number" placeholder="V" />
+                        <input class="skydd-input" name="attr_skydd-ben-h" type="number" placeholder="H"/>
+				    </div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">8-9</div>
+					<div class="cell center maincolor">Sårskada</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_sarskada-ben-v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_sarskada-ben-h" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell">#12h</div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">12-13</div>
+					<div class="cell center maincolor">Hud-/ muskelskada</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_hud_muskelskada_ben_v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_hud_muskelskada_ben_h" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell">#12h</div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">21-22</div>
+					<div class="cell center maincolor">Nervskada</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_nervskada_ben_v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_nervskada_ben_h" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#12h <br>#Smärta <br>#Handikappad</span></div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">30-31</div>
+					<div class="cell center maincolor">Ben- och bäckenfraktur</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_benbackenfraktur_ben_v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_benbackenfraktur_ben_h" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#10min <br>#Smärta <br>#Handikappad</span><span class="added">+2</span></div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">39-40</div>
+					<div class="cell center maincolor">Kraftig blödning</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_kraftigblodning_ben_v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_kraftigblodning_ben_h" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell">#1r<span class="added">+2</span></div>
+				</div>
+				<div class="column-cell split-5">
+					<div class="cell maincolor">45-46</div>
+					<div class="cell center maincolor">Lemlästad</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_lamlastad_ben_v" >
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell trauma-checkbox-class">
+						<select class="trauma-state" name="attr_lamlastad_ben_h">
+                            <option value="oskadad">k</option>
+                            <option value="skadad">Y</option>
+                            <option value="felläkt">J</option>
+                        </select>
+					</div>
+					<div class="cell"><span>#1r <br>#Fubar <br> #OMG</span><span class="added">+4</span></div>
+				</div>
+			</div>
+		</div>
+        </div>
+    </div>
+    <div class="augment-section">
+        <h1>AUGMENT</h1>
+        <div class="augment-container">
+            <div class="augment augment-header">
+                <span>Slot</span>
+                <span>Namn</span>
+                <span>Beskrivning</span>
+            </div>
+            <div class="augment">
+                <select class="augment-cell augment-slot" name="attr_augment_slot1">
+                    <option value="tom"></option>
+                    <option value="huvud" disabled>Huvud</option>
+                    <option value="H0">H0 Hud (huvud)</option>
+                    <option value="H16">H16 Näsa/Öra</option>
+                    <option value="H27">H27 Käke</option>
+                    <option value="H29">H29 Öga</option>
+                    <option value="H35">H35 Strupe/Hals</option>
+                    <option value="H38">H52 Hjärna</option>
+                    <option value="torso" disabled>Torso</option>
+                    <option value="T0">T0 Hud (torso)</option>
+                    <option value="T24">T24 Buk</option>
+                    <option value="T32">T32 Underliv</option>
+                    <option value="T36-37">T36-37 Lunga</option>
+                    <option value="T41">T41 Ryggrad</option>
+                    <option value="T49-50">T49-50 Buk</option>
+                    <option value="T51">T51 Hjärta</option>
+                    <option value="arm" disabled>Arm</option>
+                    <option value="AV0">AV0 Hud (arm vänster)</option>
+                    <option value="AH0">AH0 Hud (arm höger)</option>
+                    <option value="AV33">AV33 Underarm/hand</option>
+                    <option value="AH34">AH34 Underarm/hand</option>
+                    <option value="AV43">AV43 Överarm</option>
+                    <option value="AH44">AH44 Överarm</option>
+                    <option value="ben" disabled>Ben</option>
+                    <option value="BV0">BV0 Hud (ben vänster)</option>
+                    <option value="BH0">BH0 Hud (ben höger)</option>
+                    <option value="BV39">BV39 Underben/fot</option>
+                    <option value="BH40">BH40 Underben/fot</option>
+                    <option value="BV45">BV45 Lår</option>
+                    <option value="BV46">BV46 Lår</option>
+                </select>
+                <input class="augment-cell augment-name" type="text" name="attr_augment_name1"/>
+                <input class="augment-cell augment-desc" type="text" name="attr_augment_desc1"/>
+            </div>
+            <div class="augment">
+                <select class="augment-cell augment-slot" name="attr_augment_slot2">
+                    <option value="tom"></option>
+                    <option value="huvud" disabled>Huvud</option>
+                    <option value="H0">H0 Hud (huvud)</option>
+                    <option value="H16">H16 Näsa/Öra</option>
+                    <option value="H27">H27 Käke</option>
+                    <option value="H29">H29 Öga</option>
+                    <option value="H35">H35 Strupe/Hals</option>
+                    <option value="H38">H52 Hjärna</option>
+                    <option value="torso" disabled>Torso</option>
+                    <option value="T0">T0 Hud (torso)</option>
+                    <option value="T24">T24 Buk</option>
+                    <option value="T32">T32 Underliv</option>
+                    <option value="T36-37">T36-37 Lunga</option>
+                    <option value="T41">T41 Ryggrad</option>
+                    <option value="T49-50">T49-50 Buk</option>
+                    <option value="T51">T51 Hjärta</option>
+                    <option value="arm" disabled>Arm</option>
+                    <option value="AV0">AV0 Hud (arm vänster)</option>
+                    <option value="AH0">AH0 Hud (arm höger)</option>
+                    <option value="AV33">AV33 Underarm/hand</option>
+                    <option value="AH34">AH34 Underarm/hand</option>
+                    <option value="AV43">AV43 Överarm</option>
+                    <option value="AH44">AH44 Överarm</option>
+                    <option value="ben" disabled>Ben</option>
+                    <option value="BV0">BV0 Hud (ben vänster)</option>
+                    <option value="BH0">BH0 Hud (ben höger)</option>
+                    <option value="BV39">BV39 Underben/fot</option>
+                    <option value="BH40">BH40 Underben/fot</option>
+                    <option value="BV45">BV45 Lår</option>
+                    <option value="BV46">BV46 Lår</option>
+                </select>
+                <input class="augment-cell augment-name" type="text" name="attr_augment_name2"/>
+                <input class="augment-cell augment-desc" type="text" name="attr_augment_desc2"/>
+            </div>
+            <div class="augment">
+                <select class="augment-cell augment-slot" name="attr_augment_slot3">
+                    <option value="tom"></option>
+                    <option value="huvud" disabled>Huvud</option>
+                    <option value="H0">H0 Hud (huvud)</option>
+                    <option value="H16">H16 Näsa/Öra</option>
+                    <option value="H27">H27 Käke</option>
+                    <option value="H29">H29 Öga</option>
+                    <option value="H35">H35 Strupe/Hals</option>
+                    <option value="H38">H52 Hjärna</option>
+                    <option value="torso" disabled>Torso</option>
+                    <option value="T0">T0 Hud (torso)</option>
+                    <option value="T24">T24 Buk</option>
+                    <option value="T32">T32 Underliv</option>
+                    <option value="T36-37">T36-37 Lunga</option>
+                    <option value="T41">T41 Ryggrad</option>
+                    <option value="T49-50">T49-50 Buk</option>
+                    <option value="T51">T51 Hjärta</option>
+                    <option value="arm" disabled>Arm</option>
+                    <option value="AV0">AV0 Hud (arm vänster)</option>
+                    <option value="AH0">AH0 Hud (arm höger)</option>
+                    <option value="AV33">AV33 Underarm/hand</option>
+                    <option value="AH34">AH34 Underarm/hand</option>
+                    <option value="AV43">AV43 Överarm</option>
+                    <option value="AH44">AH44 Överarm</option>
+                    <option value="ben" disabled>Ben</option>
+                    <option value="BV0">BV0 Hud (ben vänster)</option>
+                    <option value="BH0">BH0 Hud (ben höger)</option>
+                    <option value="BV39">BV39 Underben/fot</option>
+                    <option value="BH40">BH40 Underben/fot</option>
+                    <option value="BV45">BV45 Lår</option>
+                    <option value="BV46">BV46 Lår</option>
+                </select>
+                <input class="augment-cell augment-name" type="text" name="attr_augment_name3"/>
+                <input class="augment-cell augment-desc" type="text" name="attr_augment_desc3"/>
+            </div>
+            <fieldset class="repeating_augment">
+                <div class="augment">
+                    <select class="augment-cell augment-slot" name="attr_augmentslot0">
+                    <option value="tom"></option>
+                    <option value="huvud" disabled>Huvud</option>
+                    <option value="H0">H0 Hud (huvud)</option>
+                    <option value="H16">H16 Näsa/Öra</option>
+                    <option value="H27">H27 Käke</option>
+                    <option value="H29">H29 Öga</option>
+                    <option value="H35">H35 Strupe/Hals</option>
+                    <option value="H38">H52 Hjärna</option>
+                    <option value="torso" disabled>Torso</option>
+                    <option value="T0">T0 Hud (torso)</option>
+                    <option value="T24">T24 Buk</option>
+                    <option value="T32">T32 Underliv</option>
+                    <option value="T36-37">T36-37 Lunga</option>
+                    <option value="T41">T41 Ryggrad</option>
+                    <option value="T49-50">T49-50 Buk</option>
+                    <option value="T51">T51 Hjärta</option>
+                    <option value="arm" disabled>Arm</option>
+                    <option value="AV0">AV0 Hud (arm vänster)</option>
+                    <option value="AH0">AH0 Hud (arm höger)</option>
+                    <option value="AV33">AV33 Underarm/hand</option>
+                    <option value="AH34">AH34 Underarm/hand</option>
+                    <option value="AV43">AV43 Överarm</option>
+                    <option value="AH44">AH44 Överarm</option>
+                    <option value="ben" disabled>Ben</option>
+                    <option value="BV0">BV0 Hud (ben vänster)</option>
+                    <option value="BH0">BH0 Hud (ben höger)</option>
+                    <option value="BV39">BV39 Underben/fot</option>
+                    <option value="BH40">BH40 Underben/fot</option>
+                    <option value="BV45">BV45 Lår</option>
+                    <option value="BV46">BV46 Lår</option>
+                </select>
+                    <input class="augment-cell augment-name" type="text" name="attr_augmentname0"/>
+                    <input class="augment-cell augment-desc" type="text" name="attr_augmentdesc0"/>
+            </div>      
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+<div class="eqips">
+    <div class="eqip-section">
+        <h1>EQIP</h1>
+        <div class="eqip eqip-header">
+            <span>Eqip</span>
+            <span>Auto</span>
+            <span>#Sign</span>
+            <span>Kvalitet</span>
+            <span>Beskrivning</span>
+        </div>
+        <div class="eqip">
+            <input class="eqip-cell" type="text" name="attr_eqip_name1"/>
+            <input class="eqip-cell" type="number" name="attr_eqip_auto1" min="0" max="4"/>
+            <input class="eqip-cell" type="number" name="attr_eqip_sign1"/>
+            <input class="eqip-cell" type="text" name="attr_eqip_quality1"/>
+            <input class="eqip-cell" type="text" name="attr_eqip_desc1"/>
+        </div>
+        <div class="eqip">
+            <input class="eqip-cell" type="text" name="attr_eqip_name2"/>
+            <input class="eqip-cell" type="number" name="attr_eqip_auto2" min="0" max="4"/>
+            <input class="eqip-cell" type="number" name="attr_eqip_sign2"/>
+            <input class="eqip-cell" type="text" name="attr_eqip_quality2"/>
+            <input class="eqip-cell" type="text" name="attr_eqip_desc2"/>
+        </div>
+        <div class="eqip">
+            <input class="eqip-cell" type="text" name="attr_eqip_name3"/>
+            <input class="eqip-cell" type="number" name="attr_eqip_auto3" min="0" max="4"/>
+            <input class="eqip-cell" type="number" name="attr_eqip_sign3"/>
+            <input class="eqip-cell" type="text" name="attr_eqip_quality3"/>
+            <input class="eqip-cell" type="text" name="attr_eqip_desc3"/>
+        </div>
+        <div class="eqip">
+            <input class="eqip-cell" type="text" name="attr_eqip_name4"/>
+            <input class="eqip-cell" type="number" name="attr_eqip_auto4" min="0" max="4"/>
+            <input class="eqip-cell" type="number" name="attr_eqip_sign4"/>
+            <input class="eqip-cell" type="text" name="attr_eqip_quality4"/>
+            <input class="eqip-cell" type="text" name="attr_eqip_desc4"/>
+        </div>
+        <div class="eqip">
+            <input class="eqip-cell" type="text" name="attr_eqip_name5"/>
+            <input class="eqip-cell" type="number" name="attr_eqip_auto5" min="0" max="4"/>
+            <input class="eqip-cell" type="number" name="attr_eqip_sign5"/>
+            <input class="eqip-cell" type="text" name="attr_eqip_quality5"/>
+            <input class="eqip-cell" type="text" name="attr_eqip_desc5"/>
+        </div>
+        <div class="eqip">
+            <input class="eqip-cell" type="text" name="attr_eqip_name6"/>
+            <input class="eqip-cell" type="number" name="attr_eqip_auto6" min="0" max="4"/>
+            <input class="eqip-cell" type="number" name="attr_eqip_sign6"/>
+            <input class="eqip-cell" type="text" name="attr_eqip_quality6"/>
+            <input class="eqip-cell" type="text" name="attr_eqip_desc6"/>
+        </div>
+        <fieldset class="repeating_eqip">
+            <div class="eqip">
+                <input class="eqip-cell" type="text" name="attr_eqipname"/>
+                <input class="eqip-cell" type="number" name="attr_eqipauto" min="0" max="4"/>
+                <input class="eqip-cell" type="number" name="attr_eqipsign"/>
+                <input class="eqip-cell" type="text" name="attr_eqipquality"/>
+                <input class="eqip-cell" type="text" name="attr_eqipdesc"/>
+            </div>
+        </fieldset>
+    </div>
+    <div class="hackstack-section">
+        <div class="hackstat-container sense-container">
+            <div class="sign-sense">
+                <span class="sense-label">Nätvaro</span>
+                <input class="sense-input" type="number" name="attr_natvaro"/>
+            </div>
+            <div class="sign-sense">
+                <span class="sense-label">#Sign</span>
+                <input class="sense-input" type="number" name="attr_sign_value"/>
+            </div>
+            <div class="sign-sense">
+                <span class="sense-label">#Sense</span>
+                <input class="sense-input" type="number" name="attr_sense_value"/>
+            </div>
+        </div>
+        <div class="hackstat-container">
+            <span class="hackstat-label">Personlig<br>#Stack</span>
+            <input class="hackstat-input" type="number" name="attr_personlig_stack"/>
+        </div>
+        <div class="hackstat-container">
+            <span class="hackstat-label">Privat IS</span>
+            <input class="hackstat-input" type="number" name="attr_privat_is"/>
+        </div>
+    </div>
+    <div class="hacking-section">
+        <h1>HACKING</h1>
+        <div class="hack hack-header">
+            <span>Sploit/Daemon</span>
+            <span class="hack-center">Level</span>
+            <span class="hack-center">#0D</span>
+            <span>Typ</span>
+            <span class="hack-center">Kostnad</span>
+            <span>Beskrivning</span>
+        </div>
+        <div class="hack">
+            <input class="hack-cell" type="text" name="attr_hack_name1"/>
+            <input class="hack-cell hack-center" type="number" name="attr_hack_lvl1" min="0" max="4"/>
+            <select class="hack-cell 0d hack-center" name="attr_hack_0d1">
+                <option value="not0d"></option>
+                <option value="0d" class="0d">S</option>
+            </select>
+            <select class="hack-cell hack-center" name="attr_hack_type1">
+                <option value="nohack"></option>
+                <option value="Sploit">Sploit</option>
+                <option value="Daemon">Daemon</option>
+                <option value="Tulpa">Tulpa</option>
+            </select>
+            <input class="hack-cell hack-center" type="number" name="attr_hack_cost1"/>
+            <input class="hack-cell" type="text" name="attr_hack_desc1"/>
+        </div>
+        <div class="hack">
+            <input class="hack-cell" type="text" name="attr_hack_name2"/>
+            <input class="hack-cell hack-center" type="number" name="attr_hack_lvl2" min="0" max="4"/>
+            <select class="hack-cell 0d" name="attr_hack_0d2">
+                <option value="not0d"></option>
+                <option value="0d" class="0d">S</option>
+            </select>
+            <select class="hack-cell hack-center" name="attr_hack_type2">
+                <option value="nohack"></option>
+                <option value="Sploit">Sploit</option>
+                <option value="Daemon">Daemon</option>
+                <option value="Tulpa">Tulpa</option>
+            </select>
+            <input class="hack-cell hack-center" type="number" name="attr_hack_cost2"/>
+            <input class="hack-cell" type="text" name="attr_hack_desc2"/>
+        </div>
+        <div class="hack">
+            <input class="hack-cell" type="text" name="attr_hack_name3"/>
+            <input class="hack-cell hack-center" type="number" name="attr_hack_lvl3" min="0" max="4"/>
+            <select class="hack-cell 0d" name="attr_hack_0d3">
+                <option value="not0d"></option>
+                <option value="0d" class="0d">S</option>
+            </select>
+            <select class="hack-cell hack-center" name="attr_hack_type3">
+                <option value="nohack"></option>
+                <option value="Sploit">Sploit</option>
+                <option value="Daemon">Daemon</option>
+                <option value="Tulpa">Tulpa</option>
+            </select>
+            <input class="hack-cell hack-center" type="number" name="attr_hack_cost3"/>
+            <input class="hack-cell" type="text" name="attr_hack_desc3"/>
+        </div>
+        <div class="hack">
+            <input class="hack-cell" type="text" name="attr_hack_name4"/>
+            <input class="hack-cell hack-center" type="number" name="attr_hack_lvl4" min="0" max="4"/>
+            <select class="hack-cell 0d" name="attr_hack_0d4">
+                <option value="not0d"></option>
+                <option value="0d" class="0d">S</option>
+            </select>
+            <select class="hack-cell hack-center" name="attr_hack_type4">
+                <option value="nohack"></option>
+                <option value="Sploit">Sploit</option>
+                <option value="Daemon">Daemon</option>
+                <option value="Tulpa">Tulpa</option>
+            </select>
+            <input class="hack-cell hack-center" type="number" name="attr_hack_cost4"/>
+            <input class="hack-cell" type="text" name="attr_hack_desc4"/>
+        </div>
+        <fieldset class="repeating_hack">
+            <div class="hack">
+                <input class="hack-cell" type="text" name="attr_hackname"/>
+                <input class="hack-cell hack-center" type="number" name="attr_hacklvl" min="0" max="4"/>
+                <select class="hack-cell 0d" name="attr_hack0d">
+                    <option value="not0d"></option>
+                    <option value="0d" class="0d">S</option>
+                </select>
+                <select class="hack-cell hack-center" name="attr_hacktype">
+                    <option value="nohack"></option>
+                    <option value="Sploit">Sploit</option>
+                    <option value="Daemon">Daemon</option>
+                    <option value="Tulpa">Tulpa</option>
+                </select>
+                <input class="hack-cell hack-center" type="number" name="attr_hackcost"/>
+                <input class="hack-cell" type="text" name="attr_hackdesc"/>
+            </div>
+        </fieldset>
+    </div>
+    <div class="ekonomi-section">
+        <h1>Ekonomi</h1>
+        <div class="ekonomi-flex">
+            <div class="ekonomi-container">
+                <div class="cash">
+                    <span class="cash-label coin-label">€</span>
+                    <input class="cash-input noborder" type="number" name="attr_cash-total"/>
+                </div>
+                <div class="coins">
+                    <span class="cash-label coin-label">Coins</span>
+                    <input class="cash-input noborder" type="number" name="attr_coin-total"/>
+                </div> 
+                
+                <div class="cashflow inkomster">
+                    <div class="cash-grid">
+                        <span class="cash-label">Inkomster</span>
+                        <input class="cash-total" type="number" name="attr_inkomsttotal"/>
+                        <input class="money-label" type="text" name="attr_inkomst_name1" placeholder="Inkomst"/>
+                        <input class="cash-input" type="number" name="attr_inkomst1" placeholder="€"/>
+                        <input class="money-label" type="text" name="attr_inkomst_name2"/>
+                        <input class="cash-input" type="number" name="attr_inkomst2"/>
+                        <input class="money-label" type="text" name="attr_inkomst_name3"/>
+                        <input class="cash-input" type="number" name="attr_inkomst3"/>
+                        <input class="money-label" type="text" name="attr_inkomst_name4"/>
+                        <input class="cash-input" type="number" name="attr_inkomst4"/>
+                        <input class="money-label" type="text" name="attr_inkomst_name5"/>
+                        <input class="cash-input" type="number" name="attr_inkomst5"/>
+                    </div> 
+                </div>
+                <div class="cashflow skulder">
+                    <div class="cash-grid">
+                        <span class="cash-label">Skulder</span>
+                        <input class="cash-total" type="number" name="attr_skuldtotal"/>
+                        <input class="money-label" type="text" name="attr_skuld_name1" placeholder="Skuld"/>
+                        <input class="cash-input" type="number" name="attr_skuld1" placeholder="€"/>
+                        <input class="money-label" type="text" name="attr_skuld_name2"/>
+                        <input class="cash-input" type="number" name="attr_skuld2"/>
+                        <input class="money-label" type="text" name="attr_skuld_name3"/>
+                        <input class="cash-input" type="number" name="attr_skuld3"/>
+                        <input class="money-label" type="text" name="attr_skuld_name4"/>
+                        <input class="cash-input" type="number" name="attr_skuld4"/>
+                        <input class="money-label" type="text" name="attr_skuld_name5"/>
+                        <input class="cash-input" type="number" name="attr_skuld5"/>
+                    </div>
+                </div>
+                <div class="cashflow utgifter">
+                    <div class="cash-grid">
+                        <span class="cash-label">Utgifter</span>
+                        <input class="cash-total" type="number" name="attr_utgiftertotal"/>
+                        <input class="money-label" type="text" name="attr_utgift_name1" placeholder="Utgift"/>
+                        <input class="cash-input" type="number" name="attr_utgift1" placeholder="€"/>
+                        <input class="money-label" type="text" name="attr_utgift_name2"/>
+                        <input class="cash-input" type="number" name="attr_utgift2"/>
+                        <input class="money-label" type="text" name="attr_utgift_name3"/>
+                        <input class="cash-input" type="number" name="attr_utgift3"/>
+                        <input class="money-label" type="text" name="attr_utgift_name4"/>
+                        <input class="cash-input" type="number" name="attr_utgift4"/>
+                        <input class="money-label" type="text" name="attr_utgift_name5"/>
+                        <input class="cash-input" type="number" name="attr_utgift5"/>
+                        <input class="money-label" type="text" name="attr_utgift_name6"/>
+                        <input class="cash-input" type="number" name="attr_utgift6"/>
+                        <input class="money-label" type="text" name="attr_utgift_name7"/>
+                        <input class="cash-input" type="number" name="attr_utgift7"/>
+                    </div>
+                </div>
+            </div>
+            <img class="farring-img" src="https://raw.githubusercontent.com/andsimo/r20/master/Capture.PNG" alt="Farring"/>
+        </div>
+        
+    </div>
+    <div class="downtime-section">
+        <h1>DOWNTIME</h1>
+        <div class="downtime-container">
+            <div class="downtime-activity">
+                <span class="downtime-label">Slipa Edge</span>
+                <input class="gainz" type="number" name="attr_gainz_slipa_edge" max="10"/>
+            </div>
+            <div class="downtime-activity">
+                <span class="downtime-label">Jobba</span>
+                <input class="gainz" type="number" name="attr_gainz_jobba" max="10"/>
+            </div>
+            <div class="downtime-activity">
+                <span class="downtime-label">Nätverka</span>
+                <input class="gainz" type="number" name="attr_gainz_network" max="10"/>
+            </div>
+            <div class="downtime-activity">
+                <span class="downtime-label">Opta Attribut</span>
+                <input class="gainz" type="number" name="attr_gainz_opta_attr" max="10"/>
+            </div>
+            <div class="downtime-activity">
+                <span class="downtime-label">Softa</span>
+                <input class="gainz" type="number" name="attr_gainz_softa" max="10"/>
+            </div>
+            <div class="downtime-activity">
+                <span class="downtime-label">Preppa</span>
+                <input class="gainz" type="number" name="attr_preppa" max="10"/>
+            </div>
+            <div class="downtime-activity">
+                <input class="downtime-label gainz-input" type="text" name="attr_dt_input1"/>
+                <input class="gainz" type="number" name="attr_dt_empty1" max="10"/>
+            </div>
+            <div class="downtime-activity">
+                <input class="downtime-label gainz-input" type="text" name="attr_dt_input2"/>
+                <input class="gainz" type="number" name="attr_dt_empty2" max="10"/>
+            </div>
+            <div class="downtime-activity">
+                <input class="downtime-label gainz-input" type="text" name="attr_dt_input3"/>
+                <input class="gainz" type="number" name="attr_dt_empty3" max="10"/>
+            </div>
+            <div class="downtime-activity">
+                <input class="downtime-label gainz-input" type="text" name="attr_dt_input4"/>
+                <input class="gainz" type="number" name="attr_dt_empty4" max="10"/>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="erfarenheter">
+    <div class="top-experience-section">
+        <div class="cv-section">
+            <h1>CV</h1>
+            <div class="cv-container">
+                <div class="cv-job cv-header">
+                    <span class="cv-header-label">Kontrakt</span>
+                    <span class="cv-header-label">Erfarenhet</span>
+                </div>
+                <div class="cv-job">
+                    <input class="cv-input" type="text" name="attr_cv_kontrakt1"/>
+                    <input class="cv-input" type="text" name="attr_cv_erfarenhet1"/>
+                </div>
+                <div class="cv-job">
+                    <input class="cv-input" type="text" name="attr_cv_kontrakt2"/>
+                    <input class="cv-input" type="text" name="attr_cv_erfarenhet2"/>
+                </div>
+                <div class="cv-job">
+                    <input class="cv-input" type="text" name="attr_cv_kontrakt3"/>
+                    <input class="cv-input" type="text" name="attr_cv_erfarenhet3"/>
+                </div>
+                <div class="cv-job">
+                    <input class="cv-input" type="text" name="attr_cv_kontrakt4"/>
+                    <input class="cv-input" type="text" name="attr_cv_erfarenhet4"/>
+                </div>
+                <div class="cv-job">
+                    <input class="cv-input" type="text" name="attr_cv_kontrakt5"/>
+                    <input class="cv-input" type="text" name="attr_cv_erfarenhet5"/>
+                </div>
+                <div class="cv-job">
+                    <input class="cv-input" type="text" name="attr_cv_kontrakt6"/>
+                    <input class="cv-input" type="text" name="attr_cv_erfarenhet6"/>
+                </div>
+                <div class="cv-job">
+                    <input class="cv-input" type="text" name="attr_cv_kontrakt7"/>
+                    <input class="cv-input" type="text" name="attr_cv_erfarenhet7"/>
+                </div>
+                <div class="cv-job">
+                    <input class="cv-input" type="text" name="attr_cv_kontrakt8"/>
+                    <input class="cv-input" type="text" name="attr_cv_erfarenhet8"/>
+                </div>
+            </div>
+        </div>
+        <div class="ungdom-section">
+            <h1>UNGDOM</h1>
+            <div class="ungdom-ekon-level">
+                <span class="ungdom-ekon-label">Ekonomisk Nivå</span>
+                <select class="ungdom-ekon-input" name="attr_ekonomisk_level">
+                    <option value="Shacker">Shacker</option>
+                    <option value="Loneslav">Löneslav</option>
+                    <option value="Pro">Pro</option>
+                    <option value="Paladin">Paladin</option>
+                </select>
+            </div>
+            <div class="ungdom-erfarenhet">
+                <span class="ungdom-erfarenhet-label">Erfarenhet</span>
+                <textarea name="attr_ungdom_erfarenhet"></textarea>
+            </div>
+            <h1>BACKSTORY</h1>
+             <div class="backstory">
+                <textarea class="backstory-text" name="attr_backstory"></textarea>
+            </div>    
+        </div>
+        <div class="kontakter-section">
+            <h1>KONTAKTER</h1>
+            <div class="kontakter-container">
+                <div class="kontakter-status">
+                    <div>
+                        <span class="label">Status</span>
+                        <input class="kontakt-status-input" type="number" name="attr_kontakt_status"/>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/andsimo/r20/master/happy.png" alt="happy!?" class="happy-img"/>
+                </div>
+                <div class="kontakt kontakt-header">
+                    <span class="kontakt-header kontakt-namn">Namn</span>
+                    <span class="kontakt-header">Level</span>
+                    <span class="kontakt-header kontakt-network">Nätverk</span>
+                    <span class="kontakt-header kontakt-domain-input">Domän</span>
+                </div>
+                <div class="kontakt">
+                    <input class="kontakt-input kontakt-namn" type="text" name="attr_kontakt_namn1"/>
+                    <input class="kontakt-num-input" type="number" min="0" max="4" name="attr_kontakt-level1"/>
+                    <input class="kontakt-input kontakt-network" type="text" name="attr_kontakt_network1"/>
+                    <input class="kontakt-input kontakt-domain-input" type="text" name="attr_kontakt_domain1"/>
+                    
+                    <div class="kontakt-usage">
+                        <span class="used-kontakt">#Used</span>
+                        <input class="kontakt-used" type="checkbox" name="attr_kontakt_used1"/>
+                    </div>
+                    <div class="kontakt-usage">
+                        <span class="used-kontakt">#Abused</span>
+                        <input class="kontakt-used" type="checkbox" name="attr_kontakt_abused1"/>
+                    </div>
+                </div>
+                <div class="kontakt">
+                    <input class="kontakt-input kontakt-namn" type="text" name="attr_kontakt_namn2"/>
+                    <input class="kontakt-num-input" type="number" min="0" max="4" name="attr_kontakt-level2"/>
+                    <input class="kontakt-input kontakt-network" type="text" name="attr_kontakt_network2"/>
+                    <input class="kontakt-input kontakt-domain-input" type="text" name="attr_kontakt_domain2"/> 
+                    <div class="kontakt-usage">
+                        <span class="used-kontakt">#Used</span>
+                        <input class="kontakt-used" type="checkbox" name="attr_kontakt_used2"/>
+                    </div>
+                    <div class="kontakt-usage">
+                        <span class="used-kontakt">#Abused</span>
+                        <input class="kontakt-used" type="checkbox" name="attr_kontakt_abused2"/>
+                    </div>
+                    
+                </div>
+                <div class="kontakt">
+                    <input class="kontakt-input kontakt-namn" type="text" name="attr_kontakt_namn3"/>
+                    <input class="kontakt-num-input" type="number" min="0" max="4" name="attr_kontakt-level3"/>
+                    <input class="kontakt-input kontakt-network" type="text" name="attr_kontakt_network2"/>
+                    <input class="kontakt-input kontakt-domain-input" type="text" name="attr_kontakt_domain3"/> 
+                    <div class="kontakt-usage">
+                        <span class="used-kontakt">#Used</span>
+                        <input class="kontakt-used" type="checkbox" name="attr_kontakt_used3"/>
+                    </div>
+                    <div class="kontakt-usage">
+                        <span class="used-kontakt">#Abused</span>
+                        <input class="kontakt-used" type="checkbox" name="attr_kontakt_abused3"/>
+                    </div>
+                    
+                </div>
+                <div class="kontakt">
+                    <input class="kontakt-input kontakt-namn" type="text" name="attr_kontakt_namn4"/>
+                    <input class="kontakt-num-input" type="number" min="0" max="4" name="attr_kontakt-level4"/>
+                    <input class="kontakt-input kontakt-network" type="text" name="attr_kontakt_network4"/>
+                    <input class="kontakt-input kontakt-domain-input" type="text" name="attr_kontakt_domain4"/> 
+                    <div class="kontakt-usage">
+                        <span class="used-kontakt">#Used</span>
+                        <input class="kontakt-used" type="checkbox" name="attr_kontakt_used4"/>
+                    </div>
+                    <div class="kontakt-usage">
+                        <span class="used-kontakt">#Abused</span>
+                        <input class="kontakt-used" type="checkbox" name="attr_kontakt_abused4"/>
+                    </div>
+                    
+                </div>
+                <fieldset class="repeating_kontakt">
+                    <div class="kontakt">
+                        <input class="kontakt-input kontakt-namn" type="text" name="attr_kontaktnamn4"/>
+                        <input class="kontakt-num-input" type="number" min="0" max="4" name="attr_kontaktlevel"/>
+                        <input class="kontakt-input kontakt-network" type="text" name="attr_kontaktnetwork"/>
+                        <input class="kontakt-input kontakt-domain-input" type="text" name="attr_kontaktdomain"/> 
+                        <div class="kontakt-usage">
+                            <span class="used-kontakt">#Used</span>
+                            <input class="kontakt-used" type="checkbox" name="attr_kontaktused"/>
+                        </div>
+                        <div class="kontakt-usage">
+                            <span class="used-kontakt">#Abused</span>
+                            <input class="kontakt-used" type="checkbox" name="attr_kontaktabused"/>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        
+        </div>
+    </div>
+    <div class="nexus-section">
+            <h1>NEXUS NOTES</h1>
+            <textarea class="mega-text-area" name="attr_notes"></textarea>
+        </div>  
+</div>
+
+<div class="highscores">
+    <h1>HIGHSCORE</h1>
+    <div class="highscore-section">
+        <div class="highscore">
+            <span class="highscore-label">Skadeverkan</span>
+            <input class="highscore-input" type=number name="attr_highscore_skadeverkan"/>
+        </div>
+        <div class="highscore">
+            <span class="highscore-label">Inledande Init</span>
+            <input class="highscore-input" type=number name="attr_highscore_init"/>
+        </div>
+        <div class="highscore">
+            <span class="highscore-label">Överlevd skada</span>
+            <input class="highscore-input" type=number name="attr_highscore_overlevdskada"/>
+        </div>
+        <div class="highscore">
+            <span class="highscore-label">Leechad Stack</span>
+            <input class="highscore-input" type=number name="attr_highscore_leech"/>
+        </div>
+        <div class="highscore">
+            <span class="highscore-label">Fraggade Foos</span>
+            <input class="highscore-input" type=number name="attr_highscore_frags"/>
+        </div>
+        <div class="highscore">
+            <span class="highscore-label">Förstörda Autoner</span>
+            <input class="highscore-input" type=number name="attr_highscore_autons"/>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/worker">
+    on("change:inkomst1 change:inkomst2 change:inkomst3 change:inkomst4 change:inkomst5", function(){
+        getAttrs(["inkomst1", "inkomst2", "inkomst3", "inkomst4", "inkomst5"], function(values){
+            
+            console.log(values);
+            var totalInkomst = 0;
+            for(let val of Object.values(values)){
+                num = parseInt(val, 10);
+                
+                if(!Number.isNaN(num)){
+                    totalInkomst += parseInt(val, 10);
+                }
+            }
+            
+            setAttrs({
+                inkomsttotal: totalInkomst
+            });
+        });
+    });
+</script>
+
+<script type="text/worker">
+    on("change:skuld1 change:skuld2 change:skuld3 change:skuld4 change:skuld5", function(){
+        getAttrs(["skuld1", "skuld2", "skuld3", "skuld4", "skuld5"], function(values){
+            
+            console.log(values);
+
+            var totalSkuld = 0;
+            for(let val of Object.values(values)){
+            
+                num = parseInt(val,10);
+                if(!Number.isNaN(num)){
+                    totalSkuld += parseInt(val, 10);
+                }
+                
+            }
+            
+            setAttrs({
+                skuldtotal: totalSkuld
+            });
+        });
+    });
+
+</script>
+
+
+<script type="text/worker">
+    on("change:utgift1 change:utgift2 change:utgift3 change:utgift4 change:utgift5 change:utgift6 change:utgift7", function(){
+        getAttrs(["utgift1", "utgift2", "utgift3", "utgift4", "utgift5", "utgift6", "utgift7"], function(values){
+            
+            console.log(values);
+            var totalUtgifter = 0;
+            for(let val of Object.values(values)){
+                
+                num = parseInt(val, 10);
+                
+                if(!Number.isNaN(num)){
+                    totalUtgifter += num;    
+                }  
+            }
+            
+            setAttrs({
+                utgiftertotal: totalUtgifter
+            });
+        });
+    });
+</script>
+
+
+<script type="text/worker">
+    const buttonlist = ["person","strid", "eqips", "erfarenheter", "highscores"];
+    buttonlist.forEach(button => {
+        on(`clicked:${button}`, function() {
+            setAttrs({
+                sheetTab: button
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
